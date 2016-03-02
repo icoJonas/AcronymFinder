@@ -60,7 +60,9 @@ NSMutableArray *resultsArray;
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     Result *result = [resultsArray objectAtIndex:indexPath.section];
-    cell.textLabel.text = result.meaning;
+    if (![result.meaning isKindOfClass:[NSNull class]]){
+        cell.textLabel.text = result.meaning;
+    }
     [cell sizeToFit];
     
     return cell;
@@ -76,23 +78,35 @@ NSMutableArray *resultsArray;
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     Result *result = [resultsArray objectAtIndex:section];
-    return result.fullform;
+    if (![result.fullform isKindOfClass:[NSNull class]]){
+        return result.fullform;
+    } else {
+        return @"";
+    }
 }
 
 #pragma mark - UITableViewDelegate methods
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     Result *result = [resultsArray objectAtIndex:indexPath.section];
-    CGRect r = [result.meaning boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12.0f]} context:nil];
-    
-    //Return the yielded rects height plus 100 to provided some white space between cells.
-    return r.size.height + 100;
+    if (![result.meaning isKindOfClass:[NSNull class]]){
+        CGRect r = [result.meaning boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12.0f]} context:nil];
+        
+        //Return the yielded rects height plus 100 to provided some white space between cells.
+        return r.size.height + 100;
+    } else {
+        return 0.0;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     Result *result = [resultsArray objectAtIndex:section];
-    CGRect r = [result.fullform boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16.0f]} context:nil];
-    
-    return r.size.height + 50;
+    if (![result.fullform isKindOfClass:[NSNull class]]){
+        CGRect r = [result.fullform boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16.0f]} context:nil];
+        
+        return r.size.height + 50;
+    } else {
+        return 0.0;
+    }
 }
 
 #pragma mark - ResultsDataSourceDelegate methods
