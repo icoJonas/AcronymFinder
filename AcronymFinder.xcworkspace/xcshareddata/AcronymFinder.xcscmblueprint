@@ -1,14 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++1A16E38",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37" : 0
+    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++6AB006F" : 0,
+    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++1A16E38" : 0,
+    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++50CEF86" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D56197DD-9AFA-451B-A4D3-CD5DF74B0375",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37" : ""
+    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++6AB006F" : "",
+    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++1A16E38" : "AcronymFinder\/",
+    "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++50CEF86" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "AcronymFinder",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -17,12 +21,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icoJonas\/AcronymFinder.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++1A16E38"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icoJonas\/AcronymFinder.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++50CEF86"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icoJonas\/AcronymFinder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7587378BA5B9DA19FB861D286A74D4AA3B3AEB37+++6AB006F"
     }
   ]
 }
